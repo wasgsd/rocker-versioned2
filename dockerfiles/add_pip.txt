@@ -1,0 +1,17 @@
+ipykernel
+pandas
+flask
+gunicorn
+beautifulsoup4
+matplotlib
+jupyter>=1.0.0
+pyzmq>=16
+qpython
+tushare
+akshare
+tensorflow
+transformers
+keybert
+jieba_fast
+selenium
+telethon
