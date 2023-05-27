@@ -48,7 +48,7 @@
       "FROM": "rocker/r-ver:devel",
       "ENV": {
         "S6_VERSION": "v2.1.0.2",
-        "RSTUDIO_VERSION": "2022.12.0+353",
+        "RSTUDIO_VERSION": "2023.03.1+446",
         "DEFAULT_USER": "rstudio",
         "PANDOC_VERSION": "default",
         "QUARTO_VERSION": "default"
@@ -134,7 +134,7 @@
       ],
       "USER": "${NB_USER}",
       "WORKDIR": "/home/${NB_USER}",
-      "CMD": "[\"/bin/sh\", \"-c\", \"jupyter notebook --ip 0.0.0.0 --no-browser\"]",
+      "CMD": "[\"/bin/sh\", \"-c\", \"jupyter lab --ip 0.0.0.0 --no-browser\"]",
       "EXPOSE": 8888
     },
     {
@@ -181,7 +181,7 @@
       "FROM": "rocker/cuda:devel",
       "ENV": {
         "S6_VERSION": "v2.1.0.2",
-        "RSTUDIO_VERSION": "2022.12.0+353",
+        "RSTUDIO_VERSION": "2023.03.1+446",
         "DEFAULT_USER": "rstudio",
         "PANDOC_VERSION": "default",
         "QUARTO_VERSION": "default"
