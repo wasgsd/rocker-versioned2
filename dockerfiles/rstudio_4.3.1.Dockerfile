@@ -1,4 +1,4 @@
-FROM rocker/cuda:devel
+FROM rocker/r-ver:4.3.1
 
 LABEL org.opencontainers.image.licenses="GPL-2.0-or-later" \
       org.opencontainers.image.source="https://github.com/rocker-org/rocker-versioned2" \
@@ -14,7 +14,6 @@ ENV QUARTO_VERSION=default
 RUN /rocker_scripts/install_rstudio.sh
 RUN /rocker_scripts/install_pandoc.sh
 RUN /rocker_scripts/install_quarto.sh
-RUN /rocker_scripts/install_tidyverse.sh
 
 EXPOSE 8787
 
